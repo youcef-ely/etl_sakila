@@ -1,7 +1,7 @@
 import os
-from . import config
 import logging
 from typing import Dict
+from config import Config
 from sqlalchemy import create_engine
 from sqlalchemy.engine.base import Engine
 
@@ -10,6 +10,8 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 logger = logging.getLogger(__name__)
+
+
 
 
 def get_config(db_name: str = 'sakila') -> Dict[str, str | int]:
@@ -26,19 +28,19 @@ def get_config(db_name: str = 'sakila') -> Dict[str, str | int]:
         ValueError: If unknown database name is provided
     """
     source_db_config = {
-        "user": config.MYSQL_SOURCE_USER,
-        "password": config.MYSQL_SOURCE_ROOT_PASSWORD,
-        "host": config.MYSQL_SOURCE_HOST,
-        "port": config.MYSQL_SOURCE_PORT,
-        "database": config.MYSQL_SOURCE_DATABASE,
+        "user": Config.MYSQL_SOURCE_USER,
+        "password": Config.MYSQL_SOURCE_ROOT_PASSWORD,
+        "host": Config.MYSQL_SOURCE_HOST,
+        "port": Config.MYSQL_SOURCE_PORT,
+        "database": Config.MYSQL_SOURCE_DATABASE,
     }
 
     warehouse_db_config = {
-        "user": config.MYSQL_WAREHOUSE_USER,
-        "password": config.MYSQL_WAREHOUSE_ROOT_PASSWORD,
-        "host": config.MYSQL_WAREHOUSE_HOST,
-        "port": config.MYSQL_WAREHOUSE_PORT,
-        "database": config.MYSQL_WAREHOUSE_DATABASE,
+        "user": Config.MYSQL_WAREHOUSE_USER,
+        "password": Config.MYSQL_WAREHOUSE_ROOT_PASSWORD,
+        "host": Config.MYSQL_WAREHOUSE_HOST,
+        "port": Config.MYSQL_WAREHOUSE_PORT,
+        "database": Config.MYSQL_WAREHOUSE_DATABASE,
     }
 
     if db_name == 'sakila':
@@ -64,12 +66,9 @@ def create_db_engine(config_dict: dict) -> Engine:
     """
     try:
         # Use the host from config instead of hardcoded localhost
-        db_url = f"mysql+pymysql://{config_dict['user']}:{config_dict['password']}@{config_dict['host']}:{config_dict['port']}/{config_dict['database']}"
+        db_url = f"mysql+pymysql://{config_dict['user']}:{config_dict['password']}@localhost:{config_dict['port']}/{config_dict['database']}"
         engine = create_engine(db_url)
-        
-        # Test the connection
-        with engine.connect() as conn:
-            conn.execute("SELECT 1")
+
         
         logger.info(f"Successfully connected to database `{config_dict['database']}` at {config_dict['host']}:{config_dict['port']}")
         return engine

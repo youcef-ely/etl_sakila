@@ -97,7 +97,6 @@ services:
     volumes:
       - mysql_source_data:/var/lib/mysql
       - ./sql/source:/docker-entrypoint-initdb.d
-      - shared-data:/opt/airflow/shared
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-psourcepass"]
       interval: 10s
