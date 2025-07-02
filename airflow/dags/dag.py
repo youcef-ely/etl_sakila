@@ -1,11 +1,11 @@
-import os, sys
 import logging
 from airflow import DAG
-from airflow.providers.standard.operators.python import PythonOperator
 from datetime import datetime
-
 from src import remove_file_safely
 from etl import DateETL, FilmETL, StoreETL, CustomerETL, RentalETL
+from airflow.providers.standard.operators.python import PythonOperator
+
+
 
 
 
@@ -22,8 +22,8 @@ def etl_tasks(etl_class, base_file_name: str, ti):
     """
     etl = etl_class()
 
-    raw_path = f"/opt/airflow/shared/{base_file_name}_raw.parquet"
-    transformed_path = f"/opt/airflow/shared/{base_file_name}_transformed.parquet"
+    raw_path = f"/opt/airflow/data/raw/{base_file_name}_raw.parquet"
+    transformed_path = f"/opt/airflow/data/cleaned/{base_file_name}_transformed.parquet"
 
     try:
         logger.info("Starting extract phase")

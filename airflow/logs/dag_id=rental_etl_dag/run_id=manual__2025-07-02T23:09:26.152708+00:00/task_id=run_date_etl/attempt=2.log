@@ -1,0 +1,55 @@
+{"timestamp":"2025-07-02T23:15:42.166437","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-02T23:15:42.168820","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-02T23:15:42.662997","level":"info","event":"Successfully connected to database `sakila` at mysql-source:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-02T23:15:42.663583","level":"info","event":"Successfully connected to database `sakila_dw` at mysql-warehouse:3307","logger":"src.helpers"}
+{"timestamp":"2025-07-02T23:15:42.663701","level":"info","event":"Starting extract phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-02T23:15:42.947168","level":"info","event":"Extracted 16044 records to /opt/airflow/data/raw/date_raw.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-02T23:15:42.947314","level":"info","event":"Starting transform phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-02T23:15:42.994602Z","level":"info","event":"      rental_date  week  rental_month","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.995015Z","level":"info","event":"0      2005-05-24    21             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.995330Z","level":"info","event":"8      2005-05-25    21             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.995656Z","level":"info","event":"145    2005-05-26    21             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.995943Z","level":"info","event":"319    2005-05-27    21             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.996214Z","level":"info","event":"485    2005-05-28    21             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.996484Z","level":"info","event":"681    2005-05-29    21             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.996807Z","level":"info","event":"835    2005-05-30    22             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.997093Z","level":"info","event":"993    2005-05-31    22             5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.997359Z","level":"info","event":"1156   2005-06-14    24             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.997644Z","level":"info","event":"1172   2005-06-15    24             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.997914Z","level":"info","event":"1520   2005-06-16    24             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.998161Z","level":"info","event":"1844   2005-06-17    24             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.998410Z","level":"info","event":"2169   2005-06-18    24             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.998697Z","level":"info","event":"2513   2005-06-19    24             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.999002Z","level":"info","event":"2861   2005-06-20    25             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:42.999325Z","level":"info","event":"3192   2005-06-21    25             6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.002481Z","level":"info","event":"3467   2005-07-05    27             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.002831Z","level":"info","event":"3494   2005-07-06    27             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.003148Z","level":"info","event":"3998   2005-07-07    27             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.003443Z","level":"info","event":"4459   2005-07-08    27             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.003803Z","level":"info","event":"4971   2005-07-09    27             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.004109Z","level":"info","event":"5484   2005-07-10    27             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.004399Z","level":"info","event":"5964   2005-07-11    28             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.004724Z","level":"info","event":"6425   2005-07-12    28             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.005025Z","level":"info","event":"6920   2005-07-26    30             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.005321Z","level":"info","event":"6953   2005-07-27    30             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.005630Z","level":"info","event":"7602   2005-07-28    30             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.005929Z","level":"info","event":"8222   2005-07-29    30             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.008781Z","level":"info","event":"8863   2005-07-30    30             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.008893Z","level":"info","event":"9497   2005-07-31    30             7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.008979Z","level":"info","event":"10176  2005-08-01    31             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009052Z","level":"info","event":"10847  2005-08-02    31             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009120Z","level":"info","event":"11490  2005-08-16    33             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009185Z","level":"info","event":"11513  2005-08-17    33             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009250Z","level":"info","event":"12106  2005-08-18    33             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009360Z","level":"info","event":"12727  2005-08-19    33             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009434Z","level":"info","event":"13355  2005-08-20    33             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009500Z","level":"info","event":"13979  2005-08-21    33             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009721Z","level":"info","event":"14638  2005-08-22    34             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009795Z","level":"info","event":"15264  2005-08-23    34             8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.009930Z","level":"info","event":"15862  2006-02-14     7             2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-02T23:15:43.000402","level":"warning","event":"/opt/airflow/dags/etl/dim_date_logic.py:43: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df['date_key'] = range(1, len(df) + 1)\n","logger":"py.warnings"}
+{"timestamp":"2025-07-02T23:15:43.001099","level":"warning","event":"/opt/airflow/dags/etl/dim_date_logic.py:45: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df.rename(columns={'rental_date': 'full_date', 'week': 'rental_week'}, inplace=True)\n","logger":"py.warnings"}
+{"timestamp":"2025-07-02T23:15:43.002333","level":"error","event":"ETL failed: Cannot save file into a non-existent directory: '/opt/airflow/data/transformed'","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-02T23:15:43.006925","level":"info","event":"Successfully removed file: /opt/airflow/data/raw/date_raw.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-02T23:15:43.007849","level":"info","event":"Cleanup done.","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-02T23:15:43.008027","level":"error","event":"Task failed with exception","logger":"task","error_detail":[{"exc_type":"OSError","exc_value":"Cannot save file into a non-existent directory: '/opt/airflow/data/transformed'","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":867,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1159,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/bases/operator.py","lineno":397,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":216,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":239,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":81,"name":"run"},{"filename":"/opt/airflow/dags/dag.py","lineno":38,"name":"etl_tasks"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py","lineno":2970,"name":"to_parquet"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py","lineno":483,"name":"to_parquet"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py","lineno":197,"name":"write"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py","lineno":139,"name":"_get_path_or_handle"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py","lineno":739,"name":"get_handle"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py","lineno":604,"name":"check_parent_directory"}],"is_group":false,"exceptions":[]}]}

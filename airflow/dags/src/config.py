@@ -1,4 +1,5 @@
 class Config:
+
     MYSQL_SOURCE_HOST='mysql-source'
     MYSQL_SOURCE_PORT=3306
     MYSQL_SOURCE_USER='root'

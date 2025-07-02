@@ -1,7 +1,7 @@
 import os
 import logging
 from typing import Dict
-from config import Config
+from .config import Config
 from sqlalchemy import create_engine
 from sqlalchemy.engine.base import Engine
 
@@ -66,7 +66,7 @@ def create_db_engine(config_dict: dict) -> Engine:
     """
     try:
         # Use the host from config instead of hardcoded localhost
-        db_url = f"mysql+pymysql://{config_dict['user']}:{config_dict['password']}@localhost:{config_dict['port']}/{config_dict['database']}"
+        db_url = f"mysql+pymysql://{config_dict['user']}:{config_dict['password']}@{config_dict['host']}:{config_dict['port']}/{config_dict['database']}"
         engine = create_engine(db_url)
 
         
