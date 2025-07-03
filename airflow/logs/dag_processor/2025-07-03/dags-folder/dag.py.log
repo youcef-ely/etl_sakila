@@ -65,3 +65,13 @@
 {"timestamp":"2025-07-03T12:47:34.657639","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-03T12:48:05.347579","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-03T12:48:36.011469","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:49:06.651474","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:49:37.344408","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:50:08.013547","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:50:38.698285","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:51:09.365530","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:51:40.031501","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:52:10.701985","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:52:41.369988","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:53:12.093972","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:53:42.751856","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}

@@ -51,25 +51,15 @@ def get_config(db_name: str = 'sakila') -> Dict[str, str | int]:
         raise ValueError(f"Unknown database name: {db_name}. Use 'sakila' or 'sakila_dw'")
 
 
-def create_db_engine(config_dict: dict) -> Engine:
-    """
-    Create SQLAlchemy engine from database configuration.
-    
-    Args:
-        config_dict: Dictionary containing database connection parameters
-        
-    Returns:
-        SQLAlchemy Engine object
-        
-    Raises:
-        Exception: If database connection fails
-    """
+def create_db_engine(config_dict: dict):
     try:
-        # Use the host from config instead of hardcoded localhost
         db_url = f"mysql+pymysql://{config_dict['user']}:{config_dict['password']}@{config_dict['host']}:{config_dict['port']}/{config_dict['database']}"
         engine = create_engine(db_url)
 
-        
+        # Just test the connection without executing a query
+        connection = engine.connect()
+        connection.close()
+
         logger.info(f"Successfully connected to database `{config_dict['database']}` at {config_dict['host']}:{config_dict['port']}")
         return engine
     except Exception as e:
