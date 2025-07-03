@@ -1,0 +1,14 @@
+{"timestamp":"2025-07-03T12:41:36.468477","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-03T12:41:36.470224","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:41:38.289551","level":"info","event":"Successfully connected to database `sakila` at mysql-source:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.289986","level":"info","event":"Successfully connected to database `sakila_dw` at mysql-warehouse:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.290093","level":"info","event":"Starting extract phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.586148","level":"info","event":"Extracted 1000 records to /opt/airflow/data/raw/film_raw.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.586289","level":"info","event":"Starting transform phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.610564","level":"info","event":"Transformed data saved to /opt/airflow/data/cleaned/film_transformed.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.610696","level":"info","event":"Starting load phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.849380","level":"info","event":"Loaded data into `dim_film`","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.849801","level":"info","event":"Successfully removed file: /opt/airflow/data/raw/film_raw.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.850099","level":"info","event":"Successfully removed file: /opt/airflow/data/cleaned/film_transformed.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.851655","level":"info","event":"Cleanup done.","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.851965","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

@@ -1,0 +1,22 @@
+{"timestamp":"2025-07-03T12:41:36.016443","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-03T12:41:36.017071","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:41:38.295458","level":"info","event":"Successfully connected to database `sakila` at mysql-source:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.295889","level":"info","event":"Successfully connected to database `sakila_dw` at mysql-warehouse:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.295996","level":"info","event":"Starting extract phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.296096","level":"info","event":"Starting customer data extraction...","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.402271","level":"info","event":"Extracted 599 customer records","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.412709","level":"info","event":"Extracted 603 address records","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.431082","level":"info","event":"Extracted 600 city records","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.442130","level":"info","event":"Extracted 109 country records","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.456881","level":"info","event":"Successfully merged data: 599 final records","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.585788","level":"info","event":"Extracted 599 records to /opt/airflow/data/raw/customer_raw.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.586505","level":"info","event":"Starting transform phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.586596","level":"info","event":"Starting customer data transformation...","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.600351","level":"info","event":"Customer data transformation completed successfully","logger":"etl.dim_customer_logic"}
+{"timestamp":"2025-07-03T12:41:38.616317","level":"info","event":"Transformed data saved to /opt/airflow/data/cleaned/customer_transformed.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.616442","level":"info","event":"Starting load phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.824321","level":"info","event":"Loaded data into `dim_client`","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.824613","level":"info","event":"Successfully removed file: /opt/airflow/data/raw/customer_raw.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.824884","level":"info","event":"Successfully removed file: /opt/airflow/data/cleaned/customer_transformed.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:38.825613","level":"info","event":"Cleanup done.","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:38.825939","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

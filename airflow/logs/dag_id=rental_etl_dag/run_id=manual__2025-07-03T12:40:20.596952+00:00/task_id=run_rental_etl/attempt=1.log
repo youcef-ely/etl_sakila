@@ -1,0 +1,17 @@
+{"timestamp":"2025-07-03T12:41:39.972567","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-03T12:41:39.973142","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-03T12:41:40.245597","level":"info","event":"Successfully connected to database `sakila` at mysql-source:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:40.246683","level":"info","event":"Successfully connected to database `sakila_dw` at mysql-warehouse:3306","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:40.246766","level":"info","event":"Starting extract phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:40.246824","level":"info","event":"Extracting rental data from source system","logger":"etl.fact_rental_logic"}
+{"timestamp":"2025-07-03T12:41:40.485436","level":"info","event":"Extracted 16044 rental records","logger":"etl.fact_rental_logic"}
+{"timestamp":"2025-07-03T12:41:40.501519","level":"info","event":"Extracted 16044 records to /opt/airflow/data/raw/rental_raw.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:40.501638","level":"info","event":"Starting transform phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:40.554008","level":"info","event":"Transformation complete. Final record count: 16044","logger":"etl.fact_rental_logic"}
+{"timestamp":"2025-07-03T12:41:40.563310","level":"info","event":"Transformed data saved to /opt/airflow/data/cleaned/rental_transformed.parquet","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:40.563402","level":"info","event":"Starting load phase","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:41.260047","level":"info","event":"Loaded data into `fact_rental`","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:41.260375","level":"info","event":"Successfully removed file: /opt/airflow/data/raw/rental_raw.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:41.260579","level":"info","event":"Successfully removed file: /opt/airflow/data/cleaned/rental_transformed.parquet","logger":"src.helpers"}
+{"timestamp":"2025-07-03T12:41:41.261279","level":"info","event":"Cleanup done.","logger":"unusual_prefix_39d5b4c4fb0e26bd2861cde9a37101b8f5d54193_dag"}
+{"timestamp":"2025-07-03T12:41:41.261614","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

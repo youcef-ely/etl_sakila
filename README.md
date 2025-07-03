@@ -4,11 +4,6 @@ This project implements an **ETL pipeline** that extracts data from the **Sakila
 
 ---
 
-## 📁 Project Structure
-
-
----
-
 ## 🧱 Star Schema
 
 The target data warehouse uses a **star schema** consisting of:
@@ -41,17 +36,17 @@ The target data warehouse uses a **star schema** consisting of:
 
 ## ⚙️ Technologies Used
 
-- **Apache Airflow** for orchestration
-- **Python** for ETL logic
-- **SQLAlchemy** for schema modeling and data insertion
-- **Docker + Docker Compose** for containerization
-- **Pandas** for data transformations
-- **MySQL** as source and datawarehouse
+- **Apache Airflow** for orchestration  
+- **Python** for ETL logic  
+- **SQLAlchemy** for schema modeling and data insertion  
+- **Docker + Docker Compose** for containerization  
+- **Pandas** for data transformations  
+- **MySQL** as source and data warehouse  
+
 ---
 
 ## 📋 Airflow DAG
 
 The DAG `rental_etl_dag` manages task dependencies in the following order:
 
-```text
-[run_date_etl, run_film_etl, run_store_etl, run_customer_etl] --> run_rental_etl
+![ETL DAG](rental_etl_dag-graph.png)
