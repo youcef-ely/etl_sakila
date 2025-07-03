@@ -42,6 +42,7 @@ The target data warehouse uses a **star schema** consisting of:
 - **Docker + Docker Compose** for containerization  
 - **Pandas** for data transformations  
 - **MySQL** as source and data warehouse  
+- **Streamlit + Plotly** for interactive dashboarding  
 
 ---
 
@@ -50,3 +51,22 @@ The target data warehouse uses a **star schema** consisting of:
 The DAG `rental_etl_dag` manages task dependencies in the following order:
 
 ![ETL DAG](rental_etl_dag-graph.png)
+
+---
+
+## 📊 Interactive Dashboard
+
+An interactive **Streamlit dashboard** is provided to explore rental insights, revenue trends, customer behavior, and store/film performance. It connects directly to the `sakila_dw` data warehouse and provides:
+
+- **KPIs**: Total revenue, rentals, customer count, film count
+- **Monthly trends** of revenue and rentals
+- **Top 10 performing films and stores**
+- **Geographical breakdowns** using Plotly maps
+- **Customer segmentation** by city and revenue
+- **Dynamic filtering** by category and country
+- **Tabbed views** for exploring raw data
+
+To run the dashboard:
+
+```bash
+streamlit run streamlit_dashboard.py
